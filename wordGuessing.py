@@ -16,6 +16,12 @@ chances = 2
 truth_tracker = False
 winning_tracker = False
 
+# Score
+
+scoreCorrect = 10
+scoreIncorrect = -5
+scoreCurrent = 0 
+
 #mask = [False for char in random_word]
 mask = []
 for char in random_word:
@@ -30,6 +36,7 @@ for char in random_word:
 
 while chances != 0  and  not winning_tracker:
     print("You have {} attempts left.".format(chances))
+    print(scoreCurrent)
     for index, char in enumerate(random_word):
         if mask[index]:
             print(char, end=" ")
@@ -56,6 +63,7 @@ while chances != 0  and  not winning_tracker:
 
     if not truth_tracker:
          chances = chances - 1
+         scoreCorrect += scoreIncorrect
 if winning_tracker:
    print("You win!")
 else:
