@@ -1,8 +1,12 @@
 import random
 
+# Open a word list file
+
 file = open('./wordList', 'r')
 word = file.readlines()
 file.close()
+
+# Select a random word from a list
 
 random_word = word[random.randint(0, len(word) - 1)].strip()
 #random_word = "process"
