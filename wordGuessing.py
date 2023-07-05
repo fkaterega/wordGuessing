@@ -3,8 +3,8 @@ import random
 
 words = ["process", "thread", "forks", "signal"]
 
-#random_word = words[random.randint(0, len(words) - 1)]
-random_word = "process"
+random_word = words[random.randint(0, len(words) - 1)]
+#random_word = "process"
 # print(random_word)
 
 chances = 2
