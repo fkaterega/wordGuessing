@@ -1,9 +1,10 @@
 import random
 
+file = open('./wordList', 'r')
+word = file.readlines()
+file.close()
 
-words = ["process", "thread", "forks", "signal"]
-
-random_word = words[random.randint(0, len(words) - 1)]
+random_word = word[random.randint(0, len(word) - 1)].strip()
 #random_word = "process"
 # print(random_word)
 
