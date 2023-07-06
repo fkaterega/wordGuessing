@@ -53,6 +53,7 @@ while chances != 0  and  not winning_tracker:
          if user_input == char:
               mask[index] = True
               truth_tracker = True
+              scoreCurrent += scoreCorrect
     for item in mask:
          print(item)
          if not item:
@@ -68,6 +69,21 @@ if winning_tracker:
    print("You win!")
 else:
     print("You lose!")
+
+name = ""
+
+while not name.isalpha():
+     
+     print("Enter your name player")
+     name = input("Enter > ")
+
+     if not name.isalpha():
+          print("Enter valid name")
+
+
+f = open('highscore', 'a')
+f.write("{},{}".format(name, scoreCurrent))
+f.close()
 
 # if __name__ == '__main__':
 #      main()
