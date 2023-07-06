@@ -1,4 +1,4 @@
-file = open('wordList', 'r')
-item = file.readlines()[0].rstrip()
-print(item)
+f = open('wordList', 'r')
+file = f.readlines()[0].strip()
+print(file)
 file.close()

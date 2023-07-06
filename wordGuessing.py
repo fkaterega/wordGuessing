@@ -69,3 +69,5 @@ if winning_tracker:
 else:
     print("You lose!")
 
+# if __name__ == '__main__':
+#      main()
