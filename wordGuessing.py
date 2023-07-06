@@ -63,7 +63,7 @@ while chances != 0  and  not winning_tracker:
 
     if not truth_tracker:
          chances = chances - 1
-         scoreCorrect += scoreIncorrect
+         scoreCurrent += scoreIncorrect
 if winning_tracker:
    print("You win!")
 else:
